@@ -20,10 +20,12 @@ font-family: 'Courier New', Courier, monospace;
 .education>p{
 word-wrap: break-word;
 }
-.education>p>h4{
+.education>p>span{
 text-decoration:underline;
 text-transform: uppercase;
 font-weight: bold !important;
+display: block;
+margin-bottom: 5px;
 }
 
 .myimg{

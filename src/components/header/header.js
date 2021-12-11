@@ -38,10 +38,10 @@ export default function Header({mode,func}){
                 <div className="img">
                     <img onClick={()=>func()}  src={mode} alt="" />
                 </div>
-                <div class="burger">
-                    <div style={{backgroundColor:theme.text}} id="row1" class="scrollb" ></div>
-                    <div style={{backgroundColor:theme.text}} id="row2" class="scrollb"></div>
-                    <div style={{backgroundColor:theme.text}} id="row3" class="scrollb"></div>
+                <div className="burger">
+                    <div style={{backgroundColor:theme.text}} id="row1" className="scrollb" ></div>
+                    <div style={{backgroundColor:theme.text}} id="row2" className="scrollb"></div>
+                    <div style={{backgroundColor:theme.text}} id="row3" className="scrollb"></div>
                  </div>
           </div>               
 

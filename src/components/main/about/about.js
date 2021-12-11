@@ -44,15 +44,15 @@ function About() {
                     </h3>
                   <div id='edu' className="education h3"> 
                        <p style={{color:theme.text}}>
-                          <h4>ISTA NTIC MARRAKECH </h4>
+                          <span>ISTA NTIC MARRAKECH </span>
                           Diploma in Computer Development Technology| Sep 2019 - Jul 2021
                        </p>
                        <p style={{color:theme.text}}>
-                          <h4>FSSM MARRAKECH </h4>
+                          <span>FSSM MARRAKECH </span>
                           Semlalia Faculty of Sciences of Marrakech |  2017 - 2019
                        </p >
                        <p style={{color:theme.text}}>
-                          <h4>LYCEE LAMZOUDIA</h4>
+                          <span>LYCEE LAMZOUDIA</span>
                            Baccalauréat Science physique | Juil 2017
                        </p>
                   </div>
@@ -66,11 +66,11 @@ function About() {
                   <div id='exp' className="education h3">   
                     
                       <p style={{color:theme.text}}>
-                            <h4>Freelance</h4>
+                            <span>Freelance</span>
                             Freelancing | Jul 2021
                        </p>                 
                        <p style={{color:theme.text}}>
-                            <h4>Web Developer (Stage)</h4>
+                            <span>Web Developer (Stage)</span>
                             CIMAR (Ciments Du Maroc) | Mai 2021
                        </p>
                   </div>
