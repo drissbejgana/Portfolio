@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.footer{
+display: flex;
+justify-content: space-between;
+padding: 30px;
+position: relative;
+}
+.ulfooter{
+    list-style-type: none;
+    flex:1;
+    margin-top: 55px;
+}
+.ulfooter li{
+    margin:15px 25px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+}
+.fcontact{
+    flex:2;
+    padding:10px;
+    margin-left: 60px;
+}
+.fcontact>h1{
+text-align: initial ;
+
+}
+.fcontact p{
+width: 70%;
+word-break:normal;
+font-family: 'Lato', sans-serif;
+}
+.fcontact a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(223, 58, 29);
+    color: #ffffff;
+    margin-top: 20px;
+font-family: 'Lato', sans-serif;
+
+}
+
+.fcontact a:hover{
+    transition: all .2s linear;
+   background-color: rgb(105, 38, 230);
+   cursor: pointer;
+   }
+   @media  (max-width: 768px) {
+    .footer{
+        display: block;
+        padding-bottom: 40px;
+    }
+    .fcontact>h1{
+        text-align: center ;
+
+        }
+.ulfooter{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fcontact{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fcontact p{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    .fcontact a{
+    text-align: center;
+    }
+   }
+   .createur{
+       position: absolute;
+       bottom: 0;
+       left: 50%;
+       transform: translateX(-50%);
+   }

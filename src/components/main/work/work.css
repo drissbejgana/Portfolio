@@ -1,0 +1,121 @@
+h1{
+    text-shadow: 2px 2px 20px rgb(207, 180, 180);
+    
+}
+.container_work{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.container_work >.card{
+    width: 311px;
+    height: 180px;
+    margin: 20px;
+    overflow-y: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px rgba(124, 122, 122, 0.75);
+}
+.container_work>div:hover>.langs{
+    top: 0px;
+    opacity: 1;
+    transition:all .3s linear;
+}
+
+.langs:hover>div{
+transform: translateY(0px);
+transition:transform .3s linear;
+margin: 0px 8px;
+line-height: 25px;
+}
+.langs{
+    position: absolute;
+    width: 311px;
+    height: 180px;
+    top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.langs>div{
+padding: 0px 8px;   
+height: 25px;
+background: rgb(71, 67, 66);
+color: white;
+transform: translateY(-20px);
+font-family:cursive;
+font-size: 12px;
+}
+@media  (max-width: 768px) {
+    .langs>div{
+        margin: 10px;
+    }
+
+}
+
+.card .langs>a{
+    text-decoration: none;
+    padding: 5px 10px;
+    background: rgb(209, 23, 153);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+         font-weight: bold;
+       
+}
+.card>span{
+    position: absolute;
+    top:-10px;
+    left: -10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card >span::before{
+    content: 'WebSITE';
+    position: absolute;
+    width: 150%;
+    height: 30px;
+    background-color: rgb(76, 106, 160);
+    transform: rotate(-45deg) translateY(-10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing :0.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+.card .langs>a:hover{
+    background-color: rgb(117, 46, 117);
+}
+/* Site1*/
+.container_work>div:first-child{
+background-image: url('./img/website1.PNG');
+}
+
+/* Site2*/
+.container_work>div:nth-child(2){
+    background-image: url('./img/website2.jpg');
+    }
+
+
+/* Site3*/
+.container_work>div:nth-child(3){
+                    background-image: url('./img/portofolio.PNG');
+                    }

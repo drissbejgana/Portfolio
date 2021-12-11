@@ -1,0 +1,33 @@
+
+.bar .progress-line.php span{
+  width: 70%;
+}
+.bar .progress-line.asp span{
+  width: 75%;
+}
+.bar .progress-line.laravel span{
+  width: 0%;
+}
+.bar .progress-line.csharp span{
+  width: 80%;
+}
+.bar .progress-line.sql span{
+  width: 80%;
+}
+
+
+.progress-line.php span::after{
+  content: "70%";
+}
+.progress-line.asp span::after{
+  content: "75%";
+}
+.progress-line.laravel span::after{
+  content: "0%";
+}
+.progress-line.csharp span::after{
+  content: "80%";
+}
+.progress-line.sql span::after{
+  content: "80%";
+}
