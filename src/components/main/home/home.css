@@ -21,9 +21,9 @@ margin-top: 50px;
 z-index: 0;
 }
 .contactme{
-    position: absolute;
-    bottom:90px;
-    left:150px;
+       max-width: 205px;
+       margin-left:-27px;
+       
 }
 .contactme  img{
     max-width: 30px;
@@ -55,6 +55,7 @@ cursor: pointer;
     .containe{
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
     }
     .whoim{
       margin: auto;
@@ -67,11 +68,17 @@ cursor: pointer;
 
     }
     .contactme {
-   margin: auto;
-   margin-top: 30px;
-   position: static;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       bottom: -60px;
+       margin: auto;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
     }
-
 }
 
 

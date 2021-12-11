@@ -23,11 +23,11 @@ export default function Home(){
    <div data-aos="zoom-in">
           <a name="home"/>
         <div className="containe">
-           <h2 style={{color:theme.text}} className="whoim">
+           <div>    
+             <h2 style={{color:theme.text}} className="whoim">
             <div > Hello There <span>.</span></div>Im <span>Bejgana Driss</span> Im Full Stack Devoloper<br/>
             Using PHP/REACT JS
            </h2>
-           <img className="programming" src={programming}  />
            <div className="contactme">
        <a className="buttton" href='#contact'>Contact Me</a>
        <div className="logo">
@@ -38,6 +38,8 @@ export default function Home(){
         <a href="https://www.instagram.com/idrissbejganna/" target="_blank" >  <img src={instagram} alt="instgram"/></a>
        </div>
         </div>
+           </div>
+           <img className="programming" src={programming}  />
         </div>
     </div>
 
