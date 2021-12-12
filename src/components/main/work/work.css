@@ -17,15 +17,12 @@ flex-wrap: wrap;
     background-position: center;
     box-shadow: 0 0 15px rgba(124, 122, 122, 0.75);
 }
-.container_work>div:hover>.langs{
+.container_work>.card:hover>.langs{
     top: 0px;
     opacity: 1;
     transition:all .3s linear;
 }
-
-.langs:hover>div{
-transform: translateY(0px);
-transition:transform .3s linear;
+.container_work>.card:hover>.langs>div{
 margin: 0px 8px;
 line-height: 25px;
 }
@@ -49,7 +46,6 @@ padding: 0px 8px;
 height: 25px;
 background: rgb(71, 67, 66);
 color: white;
-transform: translateY(-20px);
 font-family:cursive;
 font-size: 12px;
 }
