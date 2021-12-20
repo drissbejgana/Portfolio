@@ -18,7 +18,6 @@ export default function Home(){
     });
   }, []);
   const theme=useContext(ThemContext)
-  console.log(theme)
      return(
    <div data-aos="zoom-in">
           <a name="home"/>
