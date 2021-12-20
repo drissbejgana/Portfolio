@@ -1,12 +1,9 @@
 .container{
-    display: flex;
+  display: flex;
   justify-content: space-between;
   padding: 0 20px;
   z-index: 100;
   top: 0;
-  width: 100%;
-  transition: all .1s linear;
-  position: fixed;
   width: 100%;
 }
 .container > h2{
@@ -15,13 +12,15 @@ display: flex;
 flex: 1;
 margin-left: 40px;
 }
+.container > h2>span{
+    color: rgb(150, 130, 238) !important;
+}
 .container > .img{
  max-width: 30px;
  height: 30px;
  margin-top:15px;
  margin-right:55px;
  margin-left:55px;
- border-radius: 50%;
 }
 .container > .img>img{
 width: 100%;
@@ -36,20 +35,19 @@ cursor: pointer;
     justify-content: c;
     flex:1;
     margin-right: 50px;
-    transform: translateY(0px);
-      
+    transform: translateY(0px);      
 }
 .nav-bar li a{
      text-decoration: none;
      padding: 5px 20px;
      font-weight: bold;
 }
+.nav-bar li a:hover{
+   color: rgb(150, 130, 238) !important;
+   transition: color .2s linear;
 
-.active{
-font-weight: bold;
- background-color: rgb(105, 38, 230);
-color:#fff !important;
 }
+
 .burger div {
     width:30px;
     height: 3px;
@@ -64,18 +62,22 @@ color:#fff !important;
     .nav-bar{
         flex-direction: column;
         position: absolute;
-        left:35%;
-        transform: translateY(-220px) ;
-        transition: transform .5s linear; 
-        height: 200px;
-        width: 160px;
+        transform: translateY(47px) ;
+        transition: height .3s linear; 
+        height: 0px;
+        width: 100%;
         justify-content: space-evenly;
         box-shadow: rgba(212, 198, 198, 0.24) 0px 3px 8px;
-    }
-  
+        left: 0%;
+        align-items: center;
+        overflow: hidden;
+        
+      }
+      .container .img{
+          margin: 15px;
+      }
     .burger{
         margin: auto;
-        
     }
     .burger div{
       display: block;
@@ -83,7 +85,7 @@ color:#fff !important;
       transition: transform .3s linear;
     }
     .trans{
-        transform: translateY(47px);
+        height: 210px;
     }
 }
 
