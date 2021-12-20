@@ -3,26 +3,25 @@ import Header from "./components/header/header"
 import Main from "./components/main/main"
 import Footer from './components/footer/footer'
 import React,{useState,useEffect} from 'react';
-
-import dark from  './img/moon.png' 
-import light from  './img/sunshine.png' 
-import bat from  './img/bat.png' 
-import butterfly from  './img/butterfly.png' 
 import ScaleLoader from "react-spinners/ScaleLoader";
 import { darkTheme,lightTheme } from './theme';
-
+import dark from  './img/moon.png' 
 
 export const ThemContext=React.createContext()
 function App() {
         
-        const [mode,setmode]=useState(dark)
-        const [fly,setfly]=useState(butterfly)
-        const [theme,settheme]=useState(lightTheme)
+        const [theme,settheme]=useState(darkTheme)
         const [loading, setLoading] = useState(true);
         useEffect(()=>{
           setLoading(true)
           setTimeout(() => {
           setLoading(false) 
+          let c=0;
+          document.onscroll=()=>{
+             const header=document.querySelector('.container');
+              document.documentElement.scrollTop<c ?  header.style.position='fixed' : header.style.position='static'
+              c=document.documentElement.scrollTop;
+              }
           }, 2000); 
          
         },[])
@@ -39,27 +38,15 @@ function App() {
             
       <a name="haut"/>
                <Header func={()=>{
-                   if(mode===dark)
-                   {
-                     setmode(light);
-                     setfly(bat);
-                     settheme(darkTheme);
-                     
-                   }
-                   else if(mode===light){
-                         setmode(dark);
-                         setfly(butterfly);
-                         settheme(lightTheme);
-                       } 
-               }}  mode={mode}/>
-              
-              <Main fly={fly}/>
-              <Footer/>
+                 theme.logomode===dark?settheme(darkTheme): settheme(lightTheme);}}/>
+               <Main/>
+               <Footer/>
           </div>
       }
       </div>
     </ThemContext.Provider>
   );
 }
+
 
 export default App;
