@@ -18,7 +18,7 @@ function About() {
          <h1 style={{color:theme.text}}>About Me</h1>
         <div className="about_container">
         <div data-aos="fade-right" className="myimg">
-               <img src={"/"}></img> 
+               <img src={driss}></img> 
                 <a target="_blank" href="https://www.canva.com/design/DAEtR-UrScs/C9R0gAWumapzclfI0oEoEw/view?utm_content=DAEtR-UrScs&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel">Resume</a>  
            </div>
             <div data-aos="fade-left" className="aboutme">
